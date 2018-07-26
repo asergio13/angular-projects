@@ -1,0 +1,26 @@
+==== npm install
+Windows:
+Visit the Node.JS website and download the version you need (.msi file)
+Linux:
+#> apt-get install npm
+
+==== Install Angular CLI behind a proxy
+Get the automatic proxy file used by your windows connection:
+open a cmd window:
+##> ping wpad
+
+Open a browser and visit the URL given by the previous command,
+it will automatically download the config file.
+http://wpad.firstderivatives.com/wpad.dat
+
+Open the file with Notepad++ and get the proxy address and port used for your network.
+
+Now configure npm to use the corporate proxy:
+##> npm config set proxy http://10.152.1.11:8080
+##> npm config set https-proxy http://10.152.1.11:8080
+
+Install the Angular CLI:
+##> npm install -g @angular/cli
+
+Check the installation is successfull:
+##> ng help
