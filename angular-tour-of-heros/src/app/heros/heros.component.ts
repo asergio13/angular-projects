@@ -11,7 +11,8 @@ import { HEROES} from '../mock-heros';
 export class HerosComponent implements OnInit {
 	// declared property of type Hero
 	selectedHero: Hero;
-
+	
+	// declare method taking a parameternamed hero of type Hero
 	onSelect(hero: Hero): void {
 		this.selectedHero = hero;
 	}
