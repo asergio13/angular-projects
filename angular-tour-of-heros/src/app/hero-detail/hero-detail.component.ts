@@ -13,6 +13,8 @@ export class HeroDetailComponent implements OnInit {
 
 	constructor() { }
 
+	// OnInit interface has a hook method named ngOnInit() that Angular calls
+	// shortly after creating the component.
 	ngOnInit() {
 	}
 
