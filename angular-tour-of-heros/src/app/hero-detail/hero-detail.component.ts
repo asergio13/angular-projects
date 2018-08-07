@@ -8,8 +8,8 @@ import { Hero } from '../hero';
 })
 export class HeroDetailComponent implements OnInit {
 
-	// declare an input property of type Hero
-	@Input() hero: Hero
+	// declare an input property mySelectedHero of type Hero
+	@Input() mySelectedHero: Hero
 
 	constructor() { }
 
